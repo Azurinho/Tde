@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <input type="radio" id="Par" name="Jogo" value=0>
+    <label for="Par">Par</label><br>
+    <input type="radio" id="Impar" name="Jogo" value=1>
+    <label for="Impar">Impar</label><br>
+    <button onclick="calcularResultado()">Clique aqui para ver o resultado</button>
+
+
+<script>
+function calcularResultado(){ 
+var numero = Math.floor(Math.random() * 10 + 1)
+console.log(numero)
+var ImparOUpar = document.getElementsByName("Jogo")
+if (ImparOUpar[0]){
+    if (numero % 2 == 0){
+   console.log("O numero par ganhou")}
+   else{
+    console.log("O numero impar ganhou")
+}
+}
+}   
+</script>
+</body>
+</html>
